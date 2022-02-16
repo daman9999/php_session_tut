@@ -1,3 +1,5 @@
+
+
 <?php
 // Step 1 :- Session start kr index te
 
@@ -25,7 +27,9 @@ session_start();
   <div class="mb-3 my-4">
 
     <div class="input-group mb-3">
-  <input type="text" class="form-control" name="user" placeholder="Username" aria-label="Username" 
+  
+  <!-- input tage with php coding STARTED-->
+    <input type="text" class="form-control" name="user" placeholder="Username" aria-label="Username" 
     value=<?php
     ////////////// STEP 7. check kr session set hoya k nahi ISSET() nal
     if(isset($_SESSION['firstName'])){
@@ -36,7 +40,12 @@ session_start();
   // saari fields vch data aan toh baad hi session destroy kri
    session_destroy();
    ?>
+   
     >
+    <!-- input tage with php coding ENDED -->
+    <!--  -->
+    <!-- ::::NOTE::: inspect te session nahi dikhna kuki oh server nu pej rhe aa apa te server session encrpyt krke user nu bejda so nahi dikhda user nu for security perspective vaste -->
+    <!--  -->
   <span class="input-group-text">@</span>
 </div>
     
